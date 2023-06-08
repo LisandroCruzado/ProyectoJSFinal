@@ -38,7 +38,7 @@ allImgs.forEach((img) => {
 	});
 });
 
-//SPLITYPE
+//SplitType
 const myText = new SplitType('#my-text')
 gsap.to('.char', {
 	y: 0,
