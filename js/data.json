@@ -1,0 +1,83 @@
+[
+	{
+		"id": 1,
+		"nombre": "Banda Funcional Negra",
+		"marca": "MIR",
+		"img": "./img/shop/Banda-funcional-negra-con-agarre-nuevo1-2-1000x1000.jpg",
+		"precio": 6940,
+		"descripcion": "Banda FUNCIONAL Revestida de 80cm",
+		"cantidad": 1
+	},
+	{
+		"id": 2,
+		"nombre": "Colchoneta de Metro Negra",
+		"marca": "Mir",
+		"img": "./img/shop/COLCHONETA-DE-METRO-MIR-NEGRA-1-2-1000x1000.jpg",
+		"precio": 7550,
+		"descripcion": "Colchoneta con funda impermeable no absorbente, con cierre. Lavable.",
+		"cantidad": 1
+	},
+	{
+		"id": 3,
+		"nombre": "Kit Barbie Ferrari ",
+		"marca": "Mir",
+		"img": "./img/shop/Kit-barbie-ferrari-nuevo-1000x1000.jpg",
+		"precio": 3880,
+		"descripcion": "Par de tobilleras reforzadas con ribete con velcro para ajuste. Anatómicas.",
+		"cantidad": 1
+	},
+	{
+		"id": 4,
+		"nombre": "Mancuernas Hexagonales de Goma",
+		"marca": "MIR",
+		"img": "./img/shop/mancuernas-mir-kit-original-2.jpg",
+		"precio": 30500,
+		"descripcion": "Pares de mancuernas de 2,5kg  5kg  7,5kg  10kg  12,5kg  15kg  17,5kg  20kg  22,5kg  25kg  27,5kg 30kg",
+		"cantidad": 1
+	},
+	{
+		"id": 5,
+		"nombre": "Mancuernas Kit Original",
+		"marca": "MIR",
+		"img": "./img/shop/Mancuernas-Hexagonales-de-goma-Mir-de-175-Kg-2.jpg",
+		"precio": 26000,
+		"descripcion": "Mancuernas de fundición MIR recubiertas en goma. Precio por unidad.",
+		"cantidad": 1
+	},
+	{
+		"id": 6,
+		"nombre": "Tobillera de 3 Kg MIR",
+		"marca": "MIR",
+		"img": "./img/shop/Tobillera-de-3-Kg-MIR-Con-Ribete-2-1-1000x1000.jpg",
+		"precio": 4555,
+		"descripcion": "Par de tobilleras de tela, rellenas de arena con velcro para ajuste.",
+		"cantidad": 1
+	},
+	{
+		"id": 7,
+		"nombre": "Pelota de Goma 75cm",
+		"marca": "MIR",
+		"img": "./img/shop/pelota-75-cm-.jpg",
+		"precio": 3800,
+		"descripcion": "Pares de mancuernas de 2,5kg  5kg  7,5kg  10kg  12,5kg  15kg  17,5kg  20kg  22,5kg  25kg  27,5kg 30kg",
+		"cantidad": 1
+	},
+	{
+		"id": 8,
+		"nombre": "Mat de YOGA 6cm",
+		"marca": "MIR",
+		"img": "./img/shop/mat-de-yoga-6mm.jpg",
+		"precio": 5340,
+		"descripcion": "Mancuernas de fundición MIR recubiertas en goma. Precio por unidad.",
+		"cantidad": 1
+	},
+	{
+		"id": 9,
+		"nombre": "Rolo Yoga",
+		"marca": "MIR",
+		"img": "./img/shop/rolo-yoga.jpg",
+		"precio": 6150,
+		"descripcion": "Par de tobilleras de tela, rellenas de arena con velcro para ajuste.",
+		"cantidad": 1
+	}
+]

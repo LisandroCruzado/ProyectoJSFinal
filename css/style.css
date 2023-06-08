@@ -1,0 +1,569 @@
+/*-----------------FONTS-----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+/*-----------------SHORTCUTS-----------------*/
+:root{
+    --color-primario: #7CAC5A;
+    --color-secundario: #8FAA9F;
+    --color-terciario: #73736f;
+    --color-cuarto: #97dbef;
+    --color-claro: #EBE7EA;
+    --color-oscuro: #174e4e;
+    --fuente-logo: 'Roboto', sans-serif;
+    --funete-galeria: 'Courgette', cursive;
+    --fuente-titulos: 'Source Sans Pro', sans-serif;
+}
+/*-----------------GLOBAL-----------------*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px better responsive*/
+    scroll-behavior:smooth ;
+}
+/*-----------------RESET-----------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*-----------------NAVBAR + HERO -----------------*/
+header{
+    height: 10rem;
+    font-size: 2rem;
+    background-image: linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,1));
+}
+li a img{
+    width: 10rem;
+    height: 10rem;
+    margin-left: -4rem;
+}
+header nav ul li{
+    display: flex;
+    align-items: center;
+    font-family: var(--fuente-primaria);
+    color: var(--color-oscuro);
+}
+header nav ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    list-style: none;
+    padding: 0!important;
+}
+header nav ul li {
+    margin: 2.2rem;
+    display: flex;
+    align-items: center;
+}
+header nav ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-style: bolder;
+}
+.link{
+    position:relative;
+    color: var(--color-claro);
+    text-decoration: none;
+    font-family: var(--fuente-logo);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 0 1rem;
+}
+.link:after{
+    content: "";
+    position: absolute;
+    background-color: var(--color-oscuro);
+    height: 0.3rem;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.link:hover{
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.link:hover:after{
+    width: 100%;
+    transition: 0.3s;
+}
+/*---------LOGO---------*/
+header nav ul li p{
+    font-family: var(--fuente-titulos);
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--color-claro);
+}
+header nav li a p{
+    margin-left: -2rem;
+    font-family: var(--fuente-titulos);
+}
+.logo:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    cursor: pointer;
+}
+ul li:last-of-type {
+    width: auto;
+    border-radius: 10px;
+    margin-left: 40px;
+    padding: 5px;
+}
+ul li:last-of-type:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    cursor: pointer;
+    color: white;
+}
+/*------------ILUSTRACION---------*/
+.ilustracion{
+    background-image: url(../img/foto-reahab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*------------MAIN-HERO--------*/
+.hero{
+    height: 40vh;
+    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.5));
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    font-family: var(--fuente-logo);
+    color: var(--color-claro);
+}
+.hero h1{
+    font-size: 70px;
+    text-shadow: #FC0 1px 0 5px;
+    border-bottom:  solid #7e6c53;
+    width: 75rem;
+    position: absolute;
+}
+.hero span{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--color-oscuro);
+    text-shadow: var(--color-claro) 1px 0 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    margin-top: 12rem;
+}
+.glassbg{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.507);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    width: 100%;
+    display: flex;
+    /*modificacion p/bienvenidos*/
+    font-family: var(--fuente-titulos);
+    font-size: 2rem;
+    color: black;
+    text-decoration: bold underline;
+    align-items: center;
+}
+.bienvenidos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 40px;
+}
+.bienvenidos .glassbg{
+    width: 70%;
+    text-align: center;
+    display: flex;
+}
+.bienvenidos img {
+    width: 43rem;
+    height: 28rem;
+    border-radius: 0 1rem;
+}
+.bienvenidos .glassbg p{
+    font-family: var(--fuente-logo);
+    font-size: 3rem!important;
+    font-weight: 700;
+    color: var(--color-oscuro);
+    text-decoration: bold underline;
+    text-shadow: white 2px 0 5px;
+}
+/*------------MAIN-GALERIA--------*/
+.galeria{
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(218, 226, 144, 0.315);
+    padding: 2rem;
+}
+.left {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem 0rem 1rem;
+}
+.left img {
+    width: 95%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.left h2 {
+    font-size: 4.5rem;
+    padding-top: 3rem;
+    text-align: center;
+    color: black;
+    font-family: var(--funete-galeria);
+}
+.gallery {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    font-family: '';
+}
+.gallery img {
+    width: 90%;
+    height: 25%;
+    margin-right: 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.gallery img.active {
+    border: 5px solid #FC0;
+}
+@media screen and (max-width: 1000px) {
+.galeria {
+    width: 100vw;
+    flex-direction: column;
+}
+.left {
+    padding: 0.5rem;
+}
+.left img {
+    width: 95%;
+}
+.right {
+    flex-direction: column-reverse;
+}
+.gallery {
+    padding: 0rem 1rem;
+}
+}
+
+/*------------MAIN-ESHOP--------*/
+/*titleEshop con gsap*/
+.title-eshop{
+    background-color: var(--color-oscuro);
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-eshop h2{
+    font-size: 7rem;
+    font-family: var(--fuente-logo);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    text-align: center;
+    color: var(--color-cuarto);
+}
+.char{
+    transform: translateY(115px);
+    transition: transform .5s;
+}
+/*eshopJs*/
+/* .ilustracionEshop{
+    background-image: url(../img/bg-market.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+} */
+.containerEshop {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-image: url(../img/bg-market.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position:static;
+}
+.shop-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+}
+.tarjetita{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tarjetita p{
+    font-size: 30px;
+    font-family: var(--fuente-titulos);
+    color: greenyellow;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+
+    }
+.tarjetita img {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+/*CarritoCounter*/
+.cantidad-carrito{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 2px;
+    position: absolute;
+    display: none;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    width: 30px;
+    font-family: var(--fuente-primaria);
+}
+/*ModalContainer*/
+.modal-container{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*for the top*/
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 8vh;
+    scrollbar-color: none;
+    border-radius: 15px;
+}
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+.modal-header-title{
+    justify-self: start;
+}
+.modal-header-button{
+    cursor: pointer;
+}
+.modal-container > .modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+    font-size: 20px;
+}
+.modal-container > div > img {
+    height: 120px;
+    width: 120px;
+}
+.total-content{
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: var(--fuente-titulos);
+}
+/*delete button product*/
+.delete-product {
+    cursor: pointer;
+}
+/*stilos carrito suma resta de articulos*/
+.sumar{
+    cursor: pointer;
+}
+.restar{
+    cursor: pointer;
+}
+/*tarjetas de articulos*/
+.card{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+width: 300px;
+margin: 10px;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 400ms ease;
+}
+.card img{
+display: flex;
+align-items: center;
+margin: 10px;
+width: 90%;
+height: 250px;
+border-radius: 8px;
+}
+.card:hover{
+box-shadow: 5 16px 48px 0 rgba(222, 218, 218, 0.73);
+border: 2px solid rgba(255, 255, 255, 0.694);
+transform: scale(1.02);
+}
+.price{
+color: greenyellow;
+font-size: 22px;
+-webkit-text-stroke: 1px black;
+font-weight: 700;
+}
+.card button{
+border: none;
+outline: 0;
+padding: 12px;
+color: #c8ff00;
+background-color: black;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font: 18px;
+border-radius: 0px 0 16px 16px;
+text-transform: uppercase;
+opacity: 0.6;
+}
+.card button:hover{
+opacity: 0.99;
+}
+/*------------MAIN-ESHOP--------*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    font-family: var(--fuente-logo);
+    color: var(--color-claro);
+    margin-top: auto;
+}
+footer ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+}
+footer ul li a{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+footer ul li img{
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: .5rem;
+}
+/*--------LOGUIN--------*/
+.containerPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 60px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.5));
+    height: 850px;
+}
+input{
+    outline: 0;
+    background-color: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.boton{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #555355;;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40rem;
+    padding: 45px;
+    text-align: center;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.logged{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 60px;
+}
+.logged h1{
+    font-size: 35px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
